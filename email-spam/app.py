@@ -5,15 +5,14 @@ import pickle
 import streamlit as st
 import os
 
-BASE_DIR = os.path.dirname(__file__)  # folder jahan app.py hai
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
-# Load vectorizer
 with open(os.path.join(BASE_DIR, "vectorizer.pkl"), "rb") as f:
     vectorizer = pickle.load(f)
 
-# Load model
 with open(os.path.join(BASE_DIR, "spam_model.pkl"), "rb") as f:
     model = pickle.load(f)
+
 
 
 
