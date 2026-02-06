@@ -2,6 +2,7 @@ import streamlit as st
 import pickle
 
 # 
+import streamlit as st
 import os
 
 BASE_DIR = os.path.dirname(__file__)  # folder jahan app.py hai
